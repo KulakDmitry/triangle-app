@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>Check</title>
+  </head>
+  <body>
+    <h1 class="title">Проверка треугольника</h1>
+    <div class="input">
+      <label for="first-side">a</label>
+      <input type="text" name="first-side" id="first-side" />
+      <label for="second-side">b</label>
+      <input type="text" name="second-side" id="second-side" />
+      <label for="third-side">c</label>
+      <input type="text" name="third-side" id="third-side" />
+      <label for="low">low</label>
+      <input type="text" name="low" id="low" />
+      <label for="upp">upp</label>
+      <input type="text" name="upp" id="upp" />
+    </div>
+    <button type="submit" id="btn">check</button>
+    <div id="app"></div>
+    <script type="module">
+      import { main } from "./main.js";
+    </script>
+  </body>
+</html>

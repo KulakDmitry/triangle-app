@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  background-color: antiquewhite;
+  text-align: center;
+}
+
+.title {
+  text-align: center;
+  color: rgb(41, 48, 45);
+  margin: 0;
+  padding: 30px 0 10px;
+}
+
+.input {
+  text-align: center;
+  border-bottom: 1px solid rgb(27, 27, 26);
+  padding: 10px;
+  margin: 40px;
+}
+
+.input input {
+  padding: 10px 0;
+  font-size: 15px;
+}
+
+.input label {
+  padding-left: 30px;
+  font-size: 20px;
+}
+
+button {
+  display: block;
+  margin: auto;
+  padding: 15px 40px;
+  border: 1px solid gray;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+button:hover {
+  color: white;
+  background-color: gray;
+}
+
+#app {
+  display: inline-block;
+  border-radius: 20px;
+  margin: 5%;
+  padding: 50px;
+}
