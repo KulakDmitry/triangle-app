@@ -1,6 +1,4 @@
-document.getElementById("btn").onclick = function () {
-  main();
-};
+document.getElementById("btn").addEventListener("click", main);
 
 function main() {
   const sides = {};
@@ -23,8 +21,7 @@ function main() {
       if (sides[i] > upp || sides[i] < low) {
         const text = document.createElement("p");
         text.innerHTML = `сторона ${i} = ${sides[i]}: не может быть использована т.к. должна быть в пределах от ${low} до ${upp} `;
-        answerBlock.style.backgroundColor = "red";
-        header.style.backgroundColor = "red";
+        answerBlock.style.backgroundColor = "yellow";
         answerBlock.append(text);
 
         return false;
@@ -43,12 +40,10 @@ function main() {
       answerText = "можно";
       smile = ":)";
       answerBlock.style.backgroundColor = "rgb(115, 209, 100)";
-      header.style.backgroundColor = "rgb(115, 209, 100)";
     } else {
       answerText = "нельзя";
       smile = ":(";
       answerBlock.style.backgroundColor = "red";
-      header.style.backgroundColor = "red";
     }
     if (inRange()) {
       answerBlock.innerHTML = `На сторонах ${sides.a}, ${sides.b}, ${sides.c} в пределах от ${low} до ${upp}`;
