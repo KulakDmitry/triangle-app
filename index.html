@@ -11,7 +11,7 @@
   </head>
   <body>
     <h1 class="title">Проверка треугольника</h1>
-    <div class="input">
+    <form action="#" class="input">
       <label for="first-side">a</label>
       <input type="text" name="first-side" id="first-side" />
       <label for="second-side">b</label>
@@ -22,11 +22,13 @@
       <input type="text" name="low" id="low" />
       <label for="upp">до</label>
       <input type="text" name="upp" id="upp" />
-    </div>
-    <button type="submit" id="btn">Проверить</button>
+      <input type="button" value="Проверить" id="btn" />
+    </form>
+
     <div id="app"></div>
     <script type="module">
       import { main } from "./main.js";
+      main();
     </script>
   </body>
 </html>
