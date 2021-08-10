@@ -5,26 +5,27 @@ body {
 }
 
 .title {
+  width: 50%;
   text-align: center;
   color: rgb(41, 48, 45);
-  margin: 0 0 15px 0;
+  margin: auto auto 15px auto;
   padding: 30px 0 10px;
   border-radius: 20px;
 }
 
-.input {
+.inputForm {
   text-align: center;
   border-bottom: 1px solid rgb(27, 27, 26);
   padding: 10px;
   margin: 40px;
 }
 
-.input input {
+.inputForm input {
   padding: 10px 0;
   font-size: 15px;
 }
 
-.input label {
+.inputForm label {
   padding-left: 30px;
   font-size: 20px;
 }
@@ -41,9 +42,4 @@ input[type="button"] {
 input[type="button"]:hover {
   color: white;
   background-color: gray;
-}
-
-#app {
-  display: inline-block;
-  width: 50%;
 }
